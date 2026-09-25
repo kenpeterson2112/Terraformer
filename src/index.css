@@ -2,6 +2,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap');
 @import 'tailwindcss';
 
+@theme {
+  --font-orbitron: 'Orbitron';
+  --font-inter: 'Inter';
+}
+
 html, body {
   margin: 0;
   padding: 0;
@@ -9,8 +14,11 @@ html, body {
   background: #000;
 }
 
-button {
-  border: none;
-  padding: 0;
-  cursor: pointer;
+/* In the base layer so utility classes can override it. */
+@layer base {
+  button {
+    border: none;
+    padding: 0;
+    cursor: pointer;
+  }
 }

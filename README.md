@@ -13,4 +13,6 @@ npm run dev      # local dev server
 npm run build    # typecheck + production build
 ```
 
+Pushes to `main` deploy to GitHub Pages: https://kenpeterson2112.github.io/Terraformer/
+
 Stack: React 19, TypeScript, Vite, Tailwind CSS 4.
